@@ -117,26 +117,68 @@ export default class LuchadoresContainer extends HTMLElement {
                 padding: 20px;
                 background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
                 border-radius: 15px;
-                box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-                border: 2px solid #ffd700;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.3),
+                          inset 0 0 15px rgba(255,215,0,0.3);
+                border: 3px solid transparent;
+                border-image: linear-gradient(
+                    45deg,
+                    #ffd700 0%,
+                    #ffffff 25%,
+                    #ffd700 50%,
+                    #ffffff 75%,
+                    #ffd700 100%
+                ) 1;
                 position: relative;
                 overflow: hidden;
+                animation: borderAnimation 4s linear infinite;
             }
-            .match-container::before {
+            @keyframes borderAnimation {
+                0% {
+                    border-image-source: linear-gradient(
+                        45deg,
+                        #ffd700 0%,
+                        #ffffff 25%,
+                        #ffd700 50%,
+                        #ffffff 75%,
+                        #ffd700 100%
+                    );
+                }
+                50% {
+                    border-image-source: linear-gradient(
+                        225deg,
+                        #ffd700 0%,
+                        #ffffff 25%,
+                        #ffd700 50%,
+                        #ffffff 75%,
+                        #ffd700 100%
+                    );
+                }
+                100% {
+                    border-image-source: linear-gradient(
+                        45deg,
+                        #ffd700 0%,
+                        #ffffff 25%,
+                        #ffd700 50%,
+                        #ffffff 75%,
+                        #ffd700 100%
+                    );
+                }
+            }
+            .match-container::after {
                 content: '';
                 position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: repeating-linear-gradient(
-                    45deg,
-                    rgba(255,255,255,0.05) 0px,
-                    rgba(255,255,255,0.05) 10px,
-                    rgba(255,255,255,0) 10px,
-                    rgba(255,255,255,0) 20px
+                top: -2px;
+                left: -2px;
+                right: -2px;
+                bottom: -2px;
+                border-radius: 15px;
+                background: linear-gradient(45deg, 
+                    rgba(255,215,0,0.2),
+                    rgba(255,255,255,0.2),
+                    rgba(255,215,0,0.2)
                 );
-                z-index: 1;
+                z-index: 0;
+                pointer-events: none;
             }
             .cards-container {
                 display: flex;
@@ -145,6 +187,27 @@ export default class LuchadoresContainer extends HTMLElement {
                 position: relative;
                 z-index: 2;
                 gap: 20px;
+                align-items: center;
+            }
+            .vs-sign {
+                font-size: 48px;
+                font-weight: 900;
+                color: #ffd700;
+                text-shadow: 
+                    0 0 10px rgba(255, 215, 0, 0.5),
+                    2px 2px 4px rgba(0, 0, 0, 0.8);
+                background: linear-gradient(45deg, #ffd700, #ffa500);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                padding: 20px;
+                transform: skew(-10deg);
+                position: relative;
+                animation: pulse 2s infinite;
+            }
+            @keyframes pulse {
+                0% { transform: skew(-10deg) scale(1); }
+                50% { transform: skew(-10deg) scale(1.1); }
+                100% { transform: skew(-10deg) scale(1); }
             }
             .error {
                 color: #ff4444;
@@ -162,6 +225,10 @@ export default class LuchadoresContainer extends HTMLElement {
                 .cards-container {
                     flex-direction: column;
                     align-items: center;
+                }
+                .vs-sign {
+                    font-size: 36px;
+                    padding: 10px;
                 }
                 .match-container {
                     margin: 10px 0;
@@ -198,6 +265,10 @@ export default class LuchadoresContainer extends HTMLElement {
                     this.store
                 );
 
+                const vsSign = document.createElement('div');
+                vsSign.className = 'vs-sign';
+                vsSign.textContent = 'VS';
+
                 const card2 = new LuchadoresCards(
                     this.luchadores[i + 1],
                     this.store
@@ -212,6 +283,7 @@ export default class LuchadoresContainer extends HTMLElement {
                 );
 
                 cardsContainer.appendChild(card1);
+                cardsContainer.appendChild(vsSign);
                 cardsContainer.appendChild(card2);
                 matchContainer.appendChild(cardsContainer);
                 matchContainer.appendChild(votingStats);

@@ -6,7 +6,7 @@
     "estatura": "1.82 m",
     "edad": "32",
     "nacionalidad": "México",
-    "imagen": "https://example.com/dragon.jpg",
+    "imagen": "https://kokomexico.com/wp-content/uploads/2017/05/LUCHA-770x433.jpg",
     "descripcion": "Un luchador ágil y feroz, conocido por sus movimientos aéreos y su máscara ardiente.",
     "votos": 18
     },
@@ -17,7 +17,7 @@
     "estatura": "1.76 m",
     "edad": "29",
     "nacionalidad": "España",
-    "imagen": "https://example.com/sombra.jpg",
+    "imagen": "https://salonfamaluchalibremexicana.wordpress.com/wp-content/uploads/2011/12/sombra.jpg",
     "descripcion": "Especialista en lucha técnica, siempre aparece desde las sombras para sorprender a su oponente.",
     "votos": 12
     },
@@ -34,12 +34,12 @@
     },
     {
       "id": 4,
-      "nombre": "Reina del Dolor",
+      "nombre": "Rey del Dolor",
       "peso": "72 kg",
       "estatura": "1.70 m",
       "edad": "27",
       "nacionalidad": "Chile",
-      "imagen": "https://example.com/reina.jpg",
+      "imagen": "https://elcomercio.pe/resizer/v2/GWRNGY3LNNBVPHZX4G73WTTFOA.jpg?auth=4a86a18a2c72bfdb91e5336b1dadd7eae0797c71d8a1b71848af4fa115a51edd&width=1200&height=810&quality=90&smart=true",
       "descripcion": "Una luchadora implacable con gran técnica de sumisión y estilo intimidante.",
       "votos": 33
     },
@@ -50,7 +50,7 @@
       "estatura": "1.78 m",
       "edad": "31",
       "nacionalidad": "Perú",
-      "imagen": "https://i0.wp.com/entreladrillos.com/wp-content/uploads/2018/12/cmll-3.jpg?fit=1280%2C853&ssl=1",
+      "imagen": "https://s.yimg.com/ny/api/res/1.2/7gGR4wDcAbcrCcE8.CWDWg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://s.yimg.com/os/creatr-uploaded-images/2022-08/13f25770-1a92-11ed-bffe-ffb075f25d1f",
       "descripcion": "Resurgido de las cenizas, combina velocidad con movimientos espectaculares.",
       "votos": 42
     },
@@ -72,7 +72,7 @@
       "estatura": "1.75 m",
       "edad": "28",
       "nacionalidad": "Colombia",
-      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/rayo-de-jalisco-jr-luchador.jpg",
+      "imagen": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh35rO1gGtaecia-QA9eJ6ZDaxuoVq8rlUtTJP8C3WYXSMAt_FsNqb8ZxPSlavHhdZ7b4jfL1uFiMuskceTVqCkbqbnxrNb5xCg2_8s33fH2Qi5Ht5oUN_6psXihamxZRiG7yXA9F6-6-E/s400/000000001.JPG",
       "descripcion": "Velocidad relámpago y movimientos eléctricos que dejan a sus oponentes aturdidos.",
       "votos": 11
     },
@@ -83,7 +83,7 @@
       "estatura": "1.80 m",
       "edad": "30",
       "nacionalidad": "Brasil",
-      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/pantera-negra-luchador.jpg",
+      "imagen": "https://www.infobae.com/resizer/v2/OZ7566OZEBELNEXF7VJ3C2FETU.jpg?auth=9aa2c1b3450de836b1e14c8aeec9bfffa75ca73ec76e9b91631c848aaa9a0602&smart=true&width=1200&height=900&quality=85",
       "descripcion": "Ágil y letal, sus movimientos felinos son imposibles de predecir.",
       "votos": 12
     },
@@ -94,7 +94,7 @@
       "estatura": "1.85 m",
       "edad": "34",
       "nacionalidad": "México",
-      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/guerrero-azteca-luchador.jpg",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Ql6OFmtYWozqePyI8nz5roF94QpXKwDH8Q&s",
       "descripcion": "Técnicas ancestrales combinadas con fuerza moderna, un verdadero guerrero.",
       "votos": 4
     },
@@ -105,7 +105,7 @@
       "estatura": "1.68 m",
       "edad": "26",
       "nacionalidad": "Venezuela",
-      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/serpiente-venenosa-luchador.jpg",
+      "imagen": "https://cmll.com/wp-content/uploads/2021/02/grako.png",
       "descripcion": "Movimientos sinuosos y técnicas de sumisión que paralizan a sus rivales.",
       "votos": 5
     },
@@ -116,7 +116,7 @@
       "estatura": "1.95 m",
       "edad": "36",
       "nacionalidad": "Estados Unidos",
-      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/titan-acero-luchador.jpg",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/2023.11.04-titan_%28cropped%29.jpg/1200px-2023.11.04-titan_%28cropped%29.jpg",
       "descripcion": "Fuerza bruta y resistencia sobrehumana, un verdadero titán del ring.",
       "votos": 8
     },
@@ -127,7 +127,7 @@
       "estatura": "1.73 m",
       "edad": "27",
       "nacionalidad": "Puerto Rico",
-      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/estrella-fugaz-luchador.jpg",
+      "imagen": "https://cmll.com/wp-content/uploads/2020/07/starjr-1.png",
       "descripcion": "Movimientos aéreos espectaculares que iluminan el ring como una estrella fugaz.",
       "votos": 9
     },
@@ -138,7 +138,7 @@
       "estatura": "1.78 m",
       "edad": "31",
       "nacionalidad": "Japón",
-      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/samurai-moderno-luchador.jpg",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Kalisto_2018.jpg",
       "descripcion": "Técnicas ancestrales japonesas adaptadas a la lucha libre moderna.",
       "votos": 32
     },
@@ -149,7 +149,7 @@
       "estatura": "1.65 m",
       "edad": "25",
       "nacionalidad": "Canadá",
-      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/reina-ring-luchador.jpg",
+      "imagen": "https://storage.googleapis.com/static.elsoldemexico.com.mx/elesto/2023/08/Reina-Isis-siempre-busca-dar-el-maximo-arriba-del-ring-770x450.jpg",
       "descripcion": "Elegancia y poder combinados, la verdadera reina del cuadrilátero.",
       "votos": 35
     },
@@ -160,7 +160,7 @@
       "estatura": "1.88 m",
       "edad": "33",
       "nacionalidad": "Noruega",
-      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/vikingo-feroz-luchador.jpg",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/6/6b/El_Hijo_del_Vikingo_in_February_2024.jpg",
       "descripcion": "Fuerza nórdica y técnicas ancestrales que aterrorizan a sus oponentes.",
       "votos": 55
     },
@@ -171,7 +171,7 @@
       "estatura": "1.77 m",
       "edad": "29",
       "nacionalidad": "Reino Unido",
-      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/mago-ring-luchador.jpg",
+      "imagen": "https://cmll.com/wp-content/uploads/2020/07/magnus-2.png",
       "descripcion": "Movimientos mágicos y técnicas ilusorias que confunden a sus rivales.",
       "votos": 66
     },
@@ -182,20 +182,9 @@
       "estatura": "1.70 m",
       "edad": "28",
       "nacionalidad": "Rusia",
-      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/furia-roja-luchador.jpg",
+      "imagen": "https://i.pinimg.com/236x/d6/2f/42/d62f42811bea950009f03977f5190c5b.jpg",
       "descripcion": "Pasión y fuerza incontrolable, una verdadera furia en el ring.",
       "votos": 22
-    },
-    {
-      "id": 18,
-      "nombre": "El Cazador Nocturno",
-      "peso": "87 kg",
-      "estatura": "1.82 m",
-      "edad": "32",
-      "nacionalidad": "Australia",
-      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/cazador-nocturno-luchador.jpg",
-      "descripcion": "Sigilo y precisión letal, un cazador que nunca falla su objetivo.",
-      "votos": 24
     },
     {
       "id": 19,
@@ -204,7 +193,7 @@
       "estatura": "1.79 m",
       "edad": "30",
       "nacionalidad": "Francia",
-      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/principe-ring-luchador.jpg",
+      "imagen": "https://cmll.com/wp-content/uploads/2020/07/nitro-1.png",
       "descripcion": "Elegancia y técnica refinada, un verdadero príncipe de la lucha libre.",
       "votos": 33
     }

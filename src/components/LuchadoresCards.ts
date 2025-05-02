@@ -32,51 +32,55 @@ export default class LuchadoresCards extends HTMLElement {
                 width: 300px;
                 margin: 10px;
                 perspective: 1000px;
+                background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+                border-radius: 15px;
+                padding: 3px;
             }
             .luchador-card {
                 background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
-                border-radius: 15px;
+                border-radius: 12px;
                 padding: 20px;
                 position: relative;
                 color: white;
                 box-shadow: 0 10px 20px rgba(0,0,0,0.3);
                 overflow: hidden;
                 transition: transform 0.3s ease, box-shadow 0.3s ease;
-                border: 2px solid #gold;
+                border: none;
                 text-align: center;
             }
-            .luchador-card::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: repeating-linear-gradient(
-                    45deg,
-                    rgba(255,255,255,0.05) 0px,
-                    rgba(255,255,255,0.05) 10px,
-                    rgba(255,255,255,0) 10px,
-                    rgba(255,255,255,0) 20px
-                );
-                z-index: 1;
+
+            :host {
+                animation: borderGlow 3s ease-in-out infinite;
+                border: 3px solid;
+                border-image: linear-gradient(90deg, #ffd700, #ffffff, #ffd700) 1;
             }
+
+            @keyframes borderGlow {
+                0% { border-image: linear-gradient(90deg, #ffd700, #ffffff, #ffd700) 1; }
+                50% { border-image: linear-gradient(90deg, #ffffff, #ffd700, #ffffff) 1; }
+                100% { border-image: linear-gradient(90deg, #ffd700, #ffffff, #ffd700) 1; }
+            }
+
             .luchador-card:hover {
                 transform: translateY(-10px) rotateX(5deg);
-                box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+                box-shadow: 0 15px 30px rgba(0,0,0,0.4),
+                          0 0 20px rgba(255,215,0,0.3);
             }
-            .card-content {
-                position: relative;
-                z-index: 2;
-            }
+
             img {
                 width: 100%;
                 height: 300px;
                 object-fit: cover;
                 border-radius: 10px;
                 margin-bottom: 15px;
-                border: 3px solid #gold;
+                border: 3px solid;
+                border-image: linear-gradient(90deg, #ffd700, #ffffff, #ffd700) 1;
                 box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+                animation: borderGlow 3s ease-in-out infinite;
+            }
+            .card-content {
+                position: relative;
+                z-index: 2;
             }
             h2 {
                 margin: 15px 0;
