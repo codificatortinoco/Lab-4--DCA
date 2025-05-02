@@ -8,7 +8,7 @@
     "nacionalidad": "México",
     "imagen": "https://example.com/dragon.jpg",
     "descripcion": "Un luchador ágil y feroz, conocido por sus movimientos aéreos y su máscara ardiente.",
-    "votos": 1280
+    "votos": 18
     },
     {
     "id": 2,
@@ -19,7 +19,7 @@
     "nacionalidad": "España",
     "imagen": "https://example.com/sombra.jpg",
     "descripcion": "Especialista en lucha técnica, siempre aparece desde las sombras para sorprender a su oponente.",
-    "votos": 980
+    "votos": 12
     },
     {
       "id": 3,
@@ -28,9 +28,9 @@
       "estatura": "1.90 m",
       "edad": "35",
       "nacionalidad": "Argentina",
-      "imagen": "https://example.com/toro.jpg",
+      "imagen": "https://i.pinimg.com/736x/7f/59/41/7f5941ced665a28ea88c2ef46f327b1f.jpg",
       "descripcion": "Con una fuerza descomunal, embiste a sus rivales como un verdadero toro de los cuadriláteros.",
-      "votos": 1435
+      "votos": 22
     },
     {
       "id": 4,
@@ -41,7 +41,7 @@
       "nacionalidad": "Chile",
       "imagen": "https://example.com/reina.jpg",
       "descripcion": "Una luchadora implacable con gran técnica de sumisión y estilo intimidante.",
-      "votos": 1560
+      "votos": 33
     },
     {
       "id": 5,
@@ -50,11 +50,10 @@
       "estatura": "1.78 m",
       "edad": "31",
       "nacionalidad": "Perú",
-      "imagen": "https://example.com/fenix.jpg",
+      "imagen": "https://i0.wp.com/entreladrillos.com/wp-content/uploads/2018/12/cmll-3.jpg?fit=1280%2C853&ssl=1",
       "descripcion": "Resurgido de las cenizas, combina velocidad con movimientos espectaculares.",
-      "votos": 1670
+      "votos": 42
     },
-
     {
       "id": 6,
       "nombre": "El Capipepo Negro",
@@ -62,8 +61,151 @@
       "estatura": "1.82 m",
       "edad": "32",
       "nacionalidad": "Paraguay",
-      "imagen": "https://example.com/fenix.jpg",
+      "imagen": "https://www.debate.com.mx/img/2022/06/25/atlantis1.jpg?__scale=c:transparent,w:640,h:790,t:3",
       "descripcion": "Con la fuerza de un pepino y la agilidad de un gato, es un luchador temido por todos.",
-      "votos": 1232
+      "votos": 55
+    },
+    {
+      "id": 7,
+      "nombre": "El Rayo Plateado",
+      "peso": "78 kg",
+      "estatura": "1.75 m",
+      "edad": "28",
+      "nacionalidad": "Colombia",
+      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/rayo-de-jalisco-jr-luchador.jpg",
+      "descripcion": "Velocidad relámpago y movimientos eléctricos que dejan a sus oponentes aturdidos.",
+      "votos": 11
+    },
+    {
+      "id": 8,
+      "nombre": "La Pantera Negra",
+      "peso": "82 kg",
+      "estatura": "1.80 m",
+      "edad": "30",
+      "nacionalidad": "Brasil",
+      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/pantera-negra-luchador.jpg",
+      "descripcion": "Ágil y letal, sus movimientos felinos son imposibles de predecir.",
+      "votos": 12
+    },
+    {
+      "id": 9,
+      "nombre": "El Guerrero Azteca",
+      "peso": "92 kg",
+      "estatura": "1.85 m",
+      "edad": "34",
+      "nacionalidad": "México",
+      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/guerrero-azteca-luchador.jpg",
+      "descripcion": "Técnicas ancestrales combinadas con fuerza moderna, un verdadero guerrero.",
+      "votos": 4
+    },
+    {
+      "id": 10,
+      "nombre": "La Serpiente Venenosa",
+      "peso": "70 kg",
+      "estatura": "1.68 m",
+      "edad": "26",
+      "nacionalidad": "Venezuela",
+      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/serpiente-venenosa-luchador.jpg",
+      "descripcion": "Movimientos sinuosos y técnicas de sumisión que paralizan a sus rivales.",
+      "votos": 5
+    },
+    {
+      "id": 11,
+      "nombre": "El Titan de Acero",
+      "peso": "120 kg",
+      "estatura": "1.95 m",
+      "edad": "36",
+      "nacionalidad": "Estados Unidos",
+      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/titan-acero-luchador.jpg",
+      "descripcion": "Fuerza bruta y resistencia sobrehumana, un verdadero titán del ring.",
+      "votos": 8
+    },
+    {
+      "id": 12,
+      "nombre": "La Estrella Fugaz",
+      "peso": "75 kg",
+      "estatura": "1.73 m",
+      "edad": "27",
+      "nacionalidad": "Puerto Rico",
+      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/estrella-fugaz-luchador.jpg",
+      "descripcion": "Movimientos aéreos espectaculares que iluminan el ring como una estrella fugaz.",
+      "votos": 9
+    },
+    {
+      "id": 13,
+      "nombre": "El Samurai Moderno",
+      "peso": "85 kg",
+      "estatura": "1.78 m",
+      "edad": "31",
+      "nacionalidad": "Japón",
+      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/samurai-moderno-luchador.jpg",
+      "descripcion": "Técnicas ancestrales japonesas adaptadas a la lucha libre moderna.",
+      "votos": 32
+    },
+    {
+      "id": 14,
+      "nombre": "La Reina del Ring",
+      "peso": "68 kg",
+      "estatura": "1.65 m",
+      "edad": "25",
+      "nacionalidad": "Canadá",
+      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/reina-ring-luchador.jpg",
+      "descripcion": "Elegancia y poder combinados, la verdadera reina del cuadrilátero.",
+      "votos": 35
+    },
+    {
+      "id": 15,
+      "nombre": "El Vikingo Feroz",
+      "peso": "105 kg",
+      "estatura": "1.88 m",
+      "edad": "33",
+      "nacionalidad": "Noruega",
+      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/vikingo-feroz-luchador.jpg",
+      "descripcion": "Fuerza nórdica y técnicas ancestrales que aterrorizan a sus oponentes.",
+      "votos": 55
+    },
+    {
+      "id": 16,
+      "nombre": "El Mago del Ring",
+      "peso": "80 kg",
+      "estatura": "1.77 m",
+      "edad": "29",
+      "nacionalidad": "Reino Unido",
+      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/mago-ring-luchador.jpg",
+      "descripcion": "Movimientos mágicos y técnicas ilusorias que confunden a sus rivales.",
+      "votos": 66
+    },
+    {
+      "id": 17,
+      "nombre": "La Furia Roja",
+      "peso": "74 kg",
+      "estatura": "1.70 m",
+      "edad": "28",
+      "nacionalidad": "Rusia",
+      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/furia-roja-luchador.jpg",
+      "descripcion": "Pasión y fuerza incontrolable, una verdadera furia en el ring.",
+      "votos": 22
+    },
+    {
+      "id": 18,
+      "nombre": "El Cazador Nocturno",
+      "peso": "87 kg",
+      "estatura": "1.82 m",
+      "edad": "32",
+      "nacionalidad": "Australia",
+      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/cazador-nocturno-luchador.jpg",
+      "descripcion": "Sigilo y precisión letal, un cazador que nunca falla su objetivo.",
+      "votos": 24
+    },
+    {
+      "id": 19,
+      "nombre": "El Príncipe del Ring",
+      "peso": "83 kg",
+      "estatura": "1.79 m",
+      "edad": "30",
+      "nacionalidad": "Francia",
+      "imagen": "https://www.milenio.com/uploads/media/2020/12/15/principe-ring-luchador.jpg",
+      "descripcion": "Elegancia y técnica refinada, un verdadero príncipe de la lucha libre.",
+      "votos": 33
     }
 ]

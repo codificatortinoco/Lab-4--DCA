@@ -1,4 +1,4 @@
-import { Luchador } from "../types/Luchadores.types";
+import { Luchador } from "../types/Luchador.types";
 
 export async function fetchLuchador(nameOrId?: string | number): Promise<Luchador | Luchador[] | null> {
     const response = await fetch('../data/luchadores.json');

@@ -1,82 +1,70 @@
 import { EventEmitter } from 'events';
 import { Dispatcher } from './Dispatcher';
-import { Luchador } from '../types/Luchador';
+import { Luchador } from '../types/Luchador.types';
 
-/**
- * Action interface for type-safe action handling
- */
 interface Action {
     type: string;
     payload: any;
 }
-
-/**
- * A store that manages the state of luchadores and handles actions
- */
 export class Store extends EventEmitter {
     private dispatcher: Dispatcher;
     private _luchadores: Luchador[];
 
-    /**
-     * Creates a new Store instance
-     * @param dispatcher - The dispatcher instance to use
-     * @param initialLuchadores - Initial array of luchadores
-     */
     constructor(dispatcher: Dispatcher, initialLuchadores: Luchador[]) {
         super();
         this.dispatcher = dispatcher;
-        this._luchadores = initialLuchadores;
+        this._luchadores = initialLuchadores.map(luchador => ({
+            ...luchador,
+            votos: luchador.votos || 0
+        }));
 
         this.dispatcher.on('action', this.handleAction.bind(this));
     }
 
-    /**
-     * Gets the current array of luchadores
-     */
     get luchadores(): Luchador[] {
         return this._luchadores;
     }
 
-    /**
-     * Sets the array of luchadores
-     */
     set luchadores(value: Luchador[]) {
-        this._luchadores = value;
+        this._luchadores = value.map(luchador => ({
+            ...luchador,
+            votos: luchador.votos || 0
+        }));
+        this.emit('change');
     }
 
-    /**
-     * Handles incoming actions
-     * @param action - The action to handle
-     */
+    isMatchVoted(matchId: string): boolean {
+        return sessionStorage.getItem(`match_${matchId}_voted`) === 'true';
+    }
+
     private handleAction(action: Action): void {
         switch (action.type) {
             case 'VOTE':
-                this.handleVote(action.payload.luchadorId);
+                this.handleVote(action.payload.luchadorId, action.payload.matchId);
                 break;
         }
     }
 
-    /**
-     * Handles the vote action by incrementing the vote count for a luchador
-     * @param luchadorId - The ID of the luchador to vote for
-     */
-    private handleVote(luchadorId: number): void {
-        this._luchadores = this._luchadores.map(luchador => {
-            if (luchador.id === luchadorId) {
-                return {
-                    ...luchador,
-                    votes: (luchador.votes || 0) + 1
-                };
-            }
-            return luchador;
-        });
-        this.emit('change');
+    private handleVote(luchadorId: number, matchId: string): void {
+        if (!this.isMatchVoted(matchId)) {
+            const updatedLuchadores = this._luchadores.map(luchador => {
+                if (luchador.id === luchadorId) {
+                    const currentVotes = luchador.votos || 0;
+                    return {
+                        ...luchador,
+                        votos: currentVotes + 1
+                    };
+                }
+                return luchador;
+            });
+
+            this._luchadores = updatedLuchadores;
+            sessionStorage.setItem(`match_${matchId}_voted`, 'true');
+            this.emit('change');
+            this.emit('matchVoted', matchId);
+        }
     }
 
-    /**
-     * Gets the current array of luchadores
-     * @returns The current array of luchadores
-     */
     getLuchadores(): Luchador[] {
         return this._luchadores;
     }
